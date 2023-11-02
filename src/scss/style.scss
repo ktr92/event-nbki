@@ -246,7 +246,7 @@ img {
 .formblocksection {
 }
 .formblock {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   min-height: 1040px;
   background-image: url(../img/bg2.svg);
   background-position: top left;
@@ -256,6 +256,9 @@ img {
 .formblock__items {
   display: flex;
   justify-content: space-between;
+}
+.foooterwrapper {
+  margin-top: 80px;
 }
 .formblock__aside {
   margin-right: 59px;
@@ -606,7 +609,7 @@ img {
     }
   }
   .formblock {
-    padding: 16px 0 47px 0;
+    padding: 16px 0 0 0;
   }
   .formblock__title {
     margin-top: 0;
@@ -675,5 +678,6 @@ img {
   }
   .foooterwrapper {
     padding: 31px 0 38px 0;
+    margin-top: 47px;
   }
 }
