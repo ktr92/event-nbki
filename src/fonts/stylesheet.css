@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'New_Channel_Font';
+    src: url('New_Channel_Font-Medium.woff2') format('woff2'),
+        url('New_Channel_Font-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New_Channel_Font';
+    src: url('New_Channel_Font-Black.woff2') format('woff2'),
+        url('New_Channel_Font-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

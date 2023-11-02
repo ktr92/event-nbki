@@ -1,0 +1,91 @@
+@import "./partials/params.scss";
+@import "./partials/mixins.scss";
+
+.modal-dialog {
+  width: 400px;
+  max-width: 100%;
+}
+.modal-body {
+  overflow-y: auto;
+}
+.modal-backdrop {
+}
+.modal-backdrop.in {
+}
+.modal-header {
+  padding: 0;
+  border: none;
+}
+.modal-footer {
+  padding: 0;
+  border: none;
+  .btn {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
+    letter-spacing: -0.18px;
+    padding: 16px 40px;
+  }
+}
+.modal-content {
+  padding: 32px 20px;
+  border-radius: 10px;
+  background-image: url(../img/reg-desk.png);
+  background-color: #fff;
+  background-position: center;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  /* White card */
+}
+
+button.close {
+  top: 15px;
+  right: 15px;
+  opacity: 1 !important;
+  z-index: 999;
+  position: absolute;
+  font-size: 35px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+  letter-spacing: -0.2px;
+  margin-bottom: 26px;
+}
+.modal-body {
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+  letter-spacing: -0.2px;
+  margin-bottom: 26px;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
