@@ -66,7 +66,7 @@
                   </div><!-- /.mainblock__params -->
                   <div class="mainblock__buttons">
                     <div class="mainblock__button">
-                      <a href="#regmodal" data-toggle='modal' class='btn'>Зарегистироваться</a>
+                      <a href="#form" class='btn'>Зарегистироваться</a>
                     </div><!-- /.mainblock__button -->
                   </div><!-- /.mainblock__buttons -->
                   <div class="mainblock__info desktop">
@@ -100,46 +100,61 @@
                   <div class="formblock__form">
                     <form action="#">
                       <div class="mainform">
-                        <div class="mainform__input success">
-                          <input type="text" required data-min='1' data-max="255">
-                          <span class="placeholder">ФИО *</span>
-                        </div><!-- /.mainform__input -->
                         <div class="mainform__input ">
-                          <input type="text" required data-min='1' data-max="255">
+                          <input type="text" class='required'>
+                          <span class="placeholder">ФИО *</span>
+                          <div class="errortext">Поле должно содержать ваше ФИО</div><!-- /.error -->
+                        </div><!-- /.mainform__input -->
+                        <!-- <div class="mainform__input success">
+                          <input type="text" required>
+                          <span class="placeholder">ФИО *</span>
+                        </div> --><!-- /.mainform__input -->
+                        <div class="mainform__input ">
+                          <input type="text" class='required'>
                           <span class="placeholder">Должность *</span>
+                          <div class="errortext">Поле должно содержать вашу должность</div><!-- /.error -->
                         </div><!-- /.mainform__input -->
 
                         <div class="mainform__input ">
-                          <input type="text" required data-min='1' data-max="255">
+                          <input type="text" class='required'>
                           <span class="placeholder">Организация *</span>
+                          <div class="errortext">Поле должно содержать имя вашей организации</div><!-- /.error -->
                         </div><!-- /.mainform__input -->
                         <div class="mainform__input ">
-                          <input type="text" required data-min='1' data-max="255">
+                          <input type="text" class='inn'>
                           <span class="placeholder">ИНН организации</span>
+                          <div class="errortext">Поле должно содержать ваш настоящий ИНН</div><!-- /.error -->
                         </div><!-- /.mainform__input -->
-                        <div class="mainform__input error">
-                          <input type="text" required data-min='1' data-max="255">
+                        <div class="mainform__input ">
+                          <input type="email" class='required'>
                           <span class="placeholder">E-mail *</span>
                           <div class="errortext">Поле должно содержать ваш настоящий адрес</div><!-- /.error -->
                         </div><!-- /.mainform__input -->
+                        <!-- <div class="mainform__input error">
+                          <input type="email" required>
+                          <span class="placeholder">E-mail *</span>
+                          <div class="errortext">Поле должно содержать ваш настоящий адрес</div>
+                      </div>/.mainform__input -->
                         <div class="mainform__input ">
-                          <input type="text" required data-min='1' data-max="255">
+                          <input type="email">
                           <span class="placeholder">Дополнительный e-mail</span>
                           <span class="infotext">При регистрации рекомендуем указывать дополнительный e-mail в связи с
                             тем, что корпоративный сервер может запрещать доставку писем сторонних
                             сервисов</span><!-- /.infotext -->
                         </div><!-- /.mainform__input -->
                         <div class="mainform__input ">
-                          <input type="text" required data-min='1' data-max="255">
+                          <input type="tel">
                           <span class="placeholder">Мобильный телефон</span>
                         </div><!-- /.mainform__input -->
                         <div class="mainform__buttons">
-                          <div class="mainform__submit"><button type='submit' class='btn'>Отправить заявку</button>
+                          <div class="mainform__submit"><button id="formsubmit" disabled type='submit'
+                              class='btn'>Отправить
+                              заявку</button>
                           </div><!-- /.mainform__submit -->
                           <div class="mainform__check">
                             <div class="check-block check-block_big">
-                              <input type="checkbox" id="id99999">
-                              <label for="id99999">Даю согласие <a
+                              <input type="checkbox" id="id_check">
+                              <label for="id_check">Даю согласие <a
                                   href="https://nbki.ru/upload/iblock/5fa/muqsrd2n4cuyky63jz7wl1telgqzyppx.pdf"
                                   class="link_blue" target="_blank">
                                   на&nbsp;обработку персональных

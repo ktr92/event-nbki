@@ -304,6 +304,8 @@ img {
 }
 .infotext {
   margin-left: 18px;
+  display: block;
+  margin-top: 2px;
 }
 .errortext {
   color: #ff0029;
@@ -464,11 +466,20 @@ img {
     background-size: cover;
   }
 }
+.errortext {
+  display: none;
+}
+.errortext.active {
+  display: block;
+}
 .mainblock__text {
   display: none;
 }
 .mobile {
   display: none;
+}
+[disabled] {
+  cursor: not-allowed;
 }
 @media (max-width: 1023px) {
   .mainblock__wrapper,
